@@ -1,3 +1,3 @@
-# myBash
+# utilities
 
-Repository of my own favirite bash tools. 
+Repository of my own favirite utilities tools. 
