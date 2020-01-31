@@ -9,3 +9,6 @@ sudo du -ab / —max-depth=3 —exclude=‘/data’ | sort -n -r | head -n 100 |
 du -ab --max-depth=3 --exclude='/data' / | grep -v "Permission denied" | sort -n -r | head -n 200 |    numfmt --to iec
 
 du -ab --max-depth=3 --exclude='/data' / | grep -v "du: cannot read directory" | sort -n -r | head -n 200 |    numfmt --to iec
+
+
+find     .    -type f -newermt 2019-05-29 ! -newermt 2019-05-30 -exec mv {} /tmp \;
